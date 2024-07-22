@@ -54,7 +54,7 @@ test.describe('Verify team member profiles and social media links', () => {
 
     for (const speaker of speakers) {
         test(`Verify details and social media links for ${speaker.name}`, async ({ page }) => {
-            await page.pause()
+            // await page.pause()
             const speakerElement = page.locator(`.speakers-list .speakers-column:has(h3:has-text("${speaker.name}"))`);
             await expect(speakerElement.locator('.speaker-name')).toHaveText(speaker.name);
             await expect(speakerElement.locator('.speaker-job-title')).toHaveText(speaker.title);
