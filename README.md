@@ -1,8 +1,9 @@
 # Project Name
 
 ## Installation
+1. Clone this repository.
 
-1. Install Playwright:
+1. Install Playwright from the directory where this project located:
     ```sh
     npm install
     ```
@@ -22,6 +23,7 @@ In the `pages` directory, we have page-specific methods:
 - `tests-data/speakers.js` is a test-data file to verify speakers on the homepage.
 
 ### Directory Structure
+
 project-name-root-dir/
 ├── pages/
 │ ├── HomePage.js
