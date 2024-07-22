@@ -1,4 +1,4 @@
-# Project Name
+# Alina's Playwright assessment
 
 ## Installation
 1. Clone this repository.
