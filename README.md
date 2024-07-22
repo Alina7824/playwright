@@ -36,7 +36,7 @@ project-name-root-dir/
 
 ├── tests/
 
-│ └── test.spec.js
+│ └── demo-tests.spec.js
 
 ├── utils/
 
