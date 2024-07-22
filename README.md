@@ -1,39 +1,46 @@
-To install run:
+# Project Name
 
-1. install playwright
-npm install
+## Installation
 
-2. Project is small implemetation of POM for page specific features,
-and some generic playwright page actions and assertions for more common tasks. 
-In real project we can stick to one or the other implementation. 
+1. Install Playwright:
+    ```sh
+    npm install
+    ```
 
-3. Layout of the project structure below.
-In pages he have page specific methods:
-a. pages/HomePage for home page specific methods.
-b. pages/RegistrationPage for registration page pecific methods.
+## Project Description
 
-c. pages/PomManager manages pages for easy import. 
-d. utils/CommonActions has some generic playwright methods.
-e. tests-data/1.png file to upload as new avatar
-f. tests-data/speakers.js test-data file to verify speakers on homepage
+The project is a small implementation of POM (Page Object Model) for page-specific features and some generic Playwright page actions and assertions for more common tasks. In a real project, we can stick to one or the other implementation.
 
-Project Structure
+## Project Structure
+
+In the `pages` directory, we have page-specific methods:
+- `pages/HomePage.js` for home page-specific methods.
+- `pages/RegistrationPage.js` for registration page-specific methods.
+- `pages/PomManager.js` manages pages for easy import.
+- `utils/CommonActions.js` has some generic Playwright methods.
+- `tests-data/1.png` is a file to upload as a new avatar.
+- `tests-data/speakers.js` is a test-data file to verify speakers on the homepage.
+
+### Directory Structure
 project-name-root-dir/
 ├── pages/
-│   ├── HomePage.js
-│   ├── PomManager.js
-│   └── RegistrationPage.js
+│ ├── HomePage.js
+│ ├── PomManager.js
+│ └── RegistrationPage.js
 ├── tests/
-│   └── test.spec.js
+│ └── test.spec.js
 ├── utils/
-│   └── CommonActions.js
+│ └── CommonActions.js
 ├── tests-data/
-│   └── 1.png
-│   └── speakers.js
+│ └── 1.png
+│ └── speakers.js
 └── package.json
 
-4. Playwright.config has use setting for execution set to headless:true, set to false and uncomment
-// await this.page.pause() in CommonActions to run step by step.
+## Playwright Configuration
 
-5. Command to start tests:
-npx playwright test
+The `playwright.config.js` file has the `use` setting for execution set to `headless: true`. Set it to `false` and uncomment `// await this.page.pause()` in `CommonActions.js` to run step by step.
+
+## Command to Start Tests
+
+```sh
+npx playwright test --headed
