@@ -52,7 +52,7 @@ project-name-root-dir/
 
 ## Playwright Configuration
 
-The `playwright.config.js` file has the `use` setting for execution set to `headless: true`. Set it to `false` and uncomment `// await this.page.pause()` in `CommonActions.js` to run step by step.
+The `playwright.config.js` file is configured to run tests in headless mode (`headless: true`). To execute tests with the browser visible, set `headless` to `false`. Additionally, to debug tests step-by-step, uncomment the line `// await this.page.pause()` in `CommonActions.js`.
 
 ## Command to Start Tests
 
