@@ -25,17 +25,29 @@ In the `pages` directory, we have page-specific methods:
 ### Directory Structure
 
 project-name-root-dir/
+
 ├── pages/
+
 │ ├── HomePage.js
+
 │ ├── PomManager.js
+
 │ └── RegistrationPage.js
+
 ├── tests/
+
 │ └── test.spec.js
+
 ├── utils/
+
 │ └── CommonActions.js
+
 ├── tests-data/
+
 │ └── 1.png
+
 │ └── speakers.js
+
 └── package.json
 
 ## Playwright Configuration
